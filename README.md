@@ -12,7 +12,7 @@ In this Api project. We provided authentication using JWT token. In this we prov
           Epatrakaar Endpoints
 
 
-NOTE:- LINK = http://52.66.197.82:5000
+NOTE:- LINK = https://dark-gray-buffalo-cap.cyclic.app/api/articles
 
 
 For AUTHENTICATION
