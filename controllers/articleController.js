@@ -3,6 +3,7 @@ import multer from 'multer'
 import path from 'path'
 import Joi from 'joi'
 import fs from 'fs'
+import {APP_URL} from '../config'
 import CustomErrorHandler from "../services/customErrorHandler";
 import articleSchema from "../validators/articleValidator";
 
@@ -61,7 +62,7 @@ const articleController = {
                 if(req.files){
                     let path = ""
                     req.files.forEach(function(files,index,arr){
-                        path = path+files.path+","
+                        path = path+`${APP_URL}/`+files.path+","
                     });
                     path = path.substring(0,path.lastIndexOf(","))
                     article.images=path
